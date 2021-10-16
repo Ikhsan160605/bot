@@ -1,12 +1,17 @@
+
 {
-  "name": "whatsapp-bot",
-  "description": "whatsapp bot build with nodejs",
+  "name": "Small Sharp Tool",
+  "description": "This app does one little thing, and does it well.",
+  "keywords": [
+    "productivity",
+    "HTML5",
+    "scalpel"
+  ],
+  "website": "https://small-sharp-tool.com/",
   "repository": "https://github.com/ikhsan160605/bot",
-  "logo": "https://c.top4top.io/p_2069qnvob1.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation"]
-  "buildpacks": [{
-    "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
-  }, {
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  }]
+  "logo": "https://small-sharp-tool.com/logo.svg",
+  "success_url": "/welcome",
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap"
+  },
 }
